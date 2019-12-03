@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'sis/tutor_base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <body>
+        {% if user.is_authenticated %}
+            <div class="container">
+                <h2 class="top-menu">Hello {{ user.username }},</h2>
+                <p>User Information</p>
+            </div>
+        {% endif %}
+        <div>
+            {% for tutor in tutors %}
+            <p><b>Name: </b> {{ tutor.tutor_name }} </p>
+            <p><b>Address: </b> {{ tutor.tutor_address }} </p>
+            <p><b>City: </b> {{ tutor.tutor_city }} </p>
+            <p><b>ZIP: </b> {{ tutor.tutor_zip }} </p>
+            <p><b>eMail: </b> {{ tutor.tutor_email }} </p>
+            <p><b>Phone: </b> {{ tutor.tutor_phone }} </p>
+            <p><b>Expertise: </b> {{ tutor.tutor_sub_expertise }} </p>
+            <p><b>Root Number: </b> {{ tutor.tutor_rt_num }} </p>
+            <p><b>Bank Account Number: </b> {{ tutor.tutor_acct_num }} </p>
+            {% endfor %}
+        </div>
+    </body>
+{% endblock %}
+
+
+</html>

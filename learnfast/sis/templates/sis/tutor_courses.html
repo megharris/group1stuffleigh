@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'sis/tutor_base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <body>
+        {% if user.is_authenticated %}
+            <div class="container">
+                <h2 class="top-menu">Hello {{ user.username }},</h2>
+                <p>All Courses</p>
+            </div>
+        {% endif %}
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="links">
+                        <!-- Example row of columns -->
+                        <div>
+                            {% for course in courses %}
+                                <ul class="nav navbar-nav">
+                                    <li><a href=""><img src="{% static "image/subject.jpg" %}" style="height: 150px; width: 150px;" alt="dashboard"/></a><br/><h4><center>{{ course.course_name }}</center></h4></li>
+                        </ul>
+                            {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+{% endblock %}
+
+
+</html>

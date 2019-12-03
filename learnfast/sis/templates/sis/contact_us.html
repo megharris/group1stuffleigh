@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'sis/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+   <body>
+        <div class="content container">
+           <div class="row">
+               <div class="col-md-12">
+                   <div class="links">
+                       <div class="row">
+                           <div class="col-md-5">
+                               <div class="thumbnail">
+                                   <img class="home_image" src="{% static 'image/mission_and_vision.jpg' %}" alt="contact_us"/>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="page-container">
+
+           <h2 class="top-menu">Contact Us</h2>
+           <p>To make an appointment for a tutoring consultation or for additional
+               information regarding hours, tutors, or schedules, please use the
+               contact information below.</p>
+           <h3 class="top-menu">Phone and Email</h3>
+           <p>319-331-4666 <br>learnfasttutoring@gmail.com</br></p>
+       </div>
+
+   </body>
+{% endblock %}
+</html>

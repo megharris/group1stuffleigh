@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'sis/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+   <body>
+        <div class="content container">
+           <div class="row">
+               <div class="col-md-20">
+                   <div class="links">
+                       <div class="row">
+                           <div class="col-md-20">
+                               <div class="thumbnail">
+                                   <img src="{% static 'image/reach_your_potential.jpg' %}" alt="about_us"/>
+
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="page-container">
+
+           <h2 class="top-menu">Learn Fast Mission</h2>
+           <p>The Tutoring-Learning Center’s mission is to offer student-centered academic
+            <br>support across disciplines. In cooperation with faculty and staff, the center
+            <br>provides peer-to-peer assistance through individual and small group collaboration.</p>
+           <h3 class="top-menu">Learn Fast Vision</h3>
+           <p>The Tutoring-Learning Center staff strives to maximize academic potential and
+               <br>promote student success in a safe and welcoming environment. We adhere to <br>the following views of learning:
+               <ol>
+           <li>An inclusive environment is integral to a successful education.</li>
+           <li>Every student brings unique abilities to the classroom.</li>
+           <li>Each discipline has a unique way of reading, writing, and learning.</li>
+           <li>Learning is not generic; learning always occurs in a specific context.</li>
+           <li>Active learning improves a student’s ability to be successful and leads to student ownership of learning.</li>
+           <li>Collaboration encourages the development of critical thinking and benefits the learner.</li></ol></p>
+           <br>
+           <br>
+           <br>
+       </div>
+
+   </body>
+{% endblock %}
+</html>
